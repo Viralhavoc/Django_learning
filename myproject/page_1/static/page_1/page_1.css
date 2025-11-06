@@ -1,0 +1,93 @@
+:root{
+	--bg:#f7fafc; --card:#ffffff; --muted:#6b7280; --accent:#6b8e23;
+	--radius:12px; --maxw:1000px;
+	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+	margin:0;
+	background:linear-gradient(180deg,#eef2f7 0%,var(--bg) 100%);
+	color:#0f172a;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	padding:32px;
+	display:flex;
+	justify-content:center;
+}
+.container{
+	width:100%;
+	max-width:var(--maxw);
+	background:transparent;
+}
+header{
+	display:flex;
+	align-items:center;
+	gap:16px;
+	margin-bottom:20px;
+}
+.logo{
+	width:64px;
+	height:64px;
+	border-radius:12px;
+	background:linear-gradient(135deg,#fef3c7,#bbf7d0);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	box-shadow:0 6px 18px rgba(15,23,42,0.08);
+	flex:0 0 64px;
+}
+.logo svg{width:40px;height:40px}
+h1{font-size:1.5rem;margin:0}
+p.lead{margin:4px 0 0;color:var(--muted);font-size:0.95rem}
+main{
+	display:grid;
+	grid-template-columns: 1fr 320px;
+	gap:20px;
+	align-items:start;
+}
+@media (max-width:880px){
+	main{grid-template-columns:1fr}
+}
+.card{
+	background:var(--card);
+	border-radius:var(--radius);
+	padding:18px;
+	box-shadow:0 6px 18px rgba(15,23,42,0.04);
+}
+.hero{
+	display:flex;
+	gap:16px;
+	align-items:flex-start;
+}
+.hero img{
+	width:260px;
+	max-width:40%;
+	border-radius:10px;
+	object-fit:cover;
+	box-shadow:0 8px 22px rgba(2,6,23,0.08);
+}
+.content h2{margin-top:0}
+.grid{
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	gap:12px;
+}
+.fact{
+	background:linear-gradient(180deg,#ffffff,#fbfdff);
+	padding:12px;
+	border-radius:10px;
+	border:1px solid rgba(15,23,42,0.04);
+}
+ul{padding-left:1.2rem}
+.sidebar .box{margin-bottom:12px;}
+.gallery{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	gap:8px;
+}
+.gallery img{width:100%;height:90px;object-fit:cover;border-radius:8px}
+footer{margin-top:18px;color:var(--muted);font-size:0.9rem;}
+.badge{
+	display:inline-block;padding:6px 10px;border-radius:999px;background:#eef2e6;color:#1f3d07;font-weight:600;font-size:0.85rem;
+}
