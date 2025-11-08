@@ -1,0 +1,108 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hedgehogs — All About These Small Spiny Mammals</title>
+    <meta name="description" content="A friendly introduction to hedgehogs: appearance, behavior, care tips, and fun facts." />
+    <link rel="stylesheet" href="{% static 'page_1/page_1.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo" aria-hidden="true">
+                <!-- simple hedgehog-ish icon -->
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="hedgehog icon">
+                    <path d="M8 36c0-10 10-18 22-18s22 8 22 18v6c0 7-6 12-14 12H22c-8 0-14-5-14-12v-6z" fill="#C9D6B9"/>
+                    <path d="M46 34c0-5-7-9-16-9s-16 4-16 9" stroke="#39493A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="44" cy="34" r="2" fill="#2d2d2d"/>
+                    <path d="M14 22c2-3 8-7 14-7" stroke="#39493A" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div>
+                <h1>Hedgehogs</h1>
+                <p class="lead">Small, nocturnal mammals known for their spiny coats and solitary habits.</p>
+            </div>
+            <div style="margin-left:auto" class="badge">Beginner's Guide</div>
+        </header>
+
+        <main>
+            <section class="card">
+                <div class="hero">
+                    <img src="{% static 'page_1/hedgehog1.jfif' %}" alt="A hedgehog curled up">
+                    <div class="content">
+                        <h2>Overview</h2>
+                        <p>Hedgehogs are small mammals covered with spines (modified hairs). Native to parts of Europe, Asia and Africa, they have been kept as pets in many parts of the world. Hedgehogs are primarily nocturnal and are known for rolling into a ball when threatened.</p>
+
+                        <h3>Quick Facts</h3>
+                        <div class="grid" style="margin-top:8px">
+                            <div class="fact">
+                                <strong>Diet</strong>
+                                <div style="color:var(--muted);font-size:0.95rem">Insects, worms, some fruits, and occasionally small vertebrates.</div>
+                            </div>
+                            <div class="fact">
+                                <strong>Size</strong>
+                                <div style="color:var(--muted);font-size:0.95rem">Typically 5–12 inches (varies by species).</div>
+                            </div>
+                            <div class="fact">
+                                <strong>Behavior</strong>
+                                <div style="color:var(--muted);font-size:0.95rem">Solitary, mostly nocturnal, and uses scent for navigation.</div>
+                            </div>
+                            <div class="fact">
+                                <strong>Defense</strong>
+                                <div style="color:var(--muted);font-size:0.95rem">Rolls into a spiny ball; quills do not detach like porcupines'.</div>
+                            </div>
+                        </div>
+
+                        <h3 style="margin-top:14px">Responsible Care Tips</h3>
+                        <ul>
+                            <li>Consult a vet experienced with exotic pets before adopting.</li>
+                            <li>Provide a spacious enclosure, hiding places, and a consistent temperature.</li>
+                            <li>Feed a balanced diet; avoid raw milk and sugary foods.</li>
+                            <li>Handle gently and infrequently at first to build trust.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 style="margin-top:14px">Learn More</h3>
+                <p style="color:var(--muted)">If you're considering a hedgehog as a pet, research local regulations and speak to breeders or rescue organizations. Wild hedgehogs should not be kept as pets — if you find an injured wild hedgehog, contact a wildlife rehabilitator.</p>
+            </section>
+
+            <aside class="sidebar">
+                <div class="card box">
+                    <h4>Habitat & Range</h4>
+                    <p style="color:var(--muted)">Hedgehogs inhabit woodlands, grasslands, and suburban gardens. Their range varies by species.</p>
+                </div>
+
+                <div class="card box">
+                    <h4>Gallery</h4>
+                    <div class="gallery" aria-hidden="false">
+                        <img src="{% static 'page_1/hedgehog2.jfif' %}" alt="Hedgehog resting on leaves">
+                        <img src="{% static 'page_1/hedgehog3.jfif' %}" alt="Close-up of hedgehog face">
+                        <img src="{% static 'page_1/hedgehog4.jfif' %}" alt="Hedgehog walking on grass">
+                        <img src="{% static 'page_1/hedgehog5.jfif' %}" alt="Hedgehog curled up in a ball">
+                    </div>
+                </div>
+
+                <div class="card box">
+                    <h4>Common Questions</h4>
+                    <dl style="margin:0;color:var(--muted)">
+                        <dt style="font-weight:600">Are hedgehogs good pets?</dt>
+                        <dd>They can be rewarding but require specific care and may be illegal in some areas.</dd>
+                        <dt style="font-weight:600;margin-top:8px">Do they hibernate?</dt>
+                        <dd>Some species undergo torpor or hibernation depending on climate; captive hedgehogs often need controlled temperatures.</dd>
+                    </dl>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+                <div>© Hedgehog Guide • Simple, general information only</div>
+                <div style="color:var(--muted)">Last updated: 2025</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
